@@ -12,7 +12,7 @@ function diminuiTamanho(){
         numeroSenha.textContent = tamanhoSenha;
 }
 botoes[0].onclick = diminuiTamanho;
-botoes[1].onclick = aumentaTamanho;
+botoes[1].onclick = aumentaTamanho;+
 function aumentaTamanho(){
     tamanhoSenha = tamanhoSenha+1;
     numeroSenha.textContent = tamanhoSenha;

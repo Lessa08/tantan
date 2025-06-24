@@ -17,29 +17,29 @@
         <div class="conteudo-senha">
             <label for="campo-senha">Senha</label>
             <input name="senha" type="text" id="campo-senha">
-            <button class="parametro-senha__botao">Gerar senha</button>
+            <button class="parametro-senha__botao" id="botao-gerar">Gerar senha</button>
         </div>
 
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
             <div class="parametro-coluna__senha">
                 <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
-                    <input type="range" min="6" max="32" value="12">
+                    <h4 class="parametro-senha__titulo">Número de caracteres: <span id="numero-caracteres">12</span></h4>
+                    <input type="range" min="6" max="32" value="12" id="range-caracteres">
                 </div>
 
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Características da senha</h4>
-                    <label><input type="checkbox" class="checkbox" checked> Letras maiúsculas</label><br>
-                    <label><input type="checkbox" class="checkbox" checked> Letras minúsculas</label><br>
-                    <label><input type="checkbox" class="checkbox" checked> Números</label><br>
-                    <label><input type="checkbox" class="checkbox" checked> Símbolos</label>
+                    <label><input type="checkbox" class="checkbox" id="maiusculas" checked> Letras maiúsculas</label><br>
+                    <label><input type="checkbox" class="checkbox" id="minusculas" checked> Letras minúsculas</label><br>
+                    <label><input type="checkbox" class="checkbox" id="numeros" checked> Números</label><br>
+                    <label><input type="checkbox" class="checkbox" id="simbolos" checked> Símbolos</label>
                 </div>
 
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Força da senha</h4>
                     <div class="barra">
-                        <div class="forca media"></div>
+                        <div class="forca media" id="forca-barra"></div>
                     </div>
                     <div class="parametro-senha-textos">
                         <span>Fraca</span>
@@ -50,5 +50,7 @@
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
